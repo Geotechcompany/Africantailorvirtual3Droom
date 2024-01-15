@@ -7,12 +7,11 @@ import os
 
 app = Flask(__name__)
 
-cap = cv2.VideoCapture(2)
+cap = cv2.VideoCapture(-1)
 curClothId = 0
 size = 100
 images = [
-    cv2.imread('tshirt/tshirt1.jpg'),
-    cv2.imread('tshirt/tshirt2.jpg'),
+
     # Add more cloth images as needed
 ]
 UPLOAD_FOLDER = 'uploads'
