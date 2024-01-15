@@ -1,0 +1,5 @@
+flask
+gunicorn
+imutils
+opencv-python
+werkzeug

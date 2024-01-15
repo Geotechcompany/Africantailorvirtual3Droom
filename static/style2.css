@@ -1,0 +1,114 @@
+
+body {
+    background-color: #c79d9d;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%; /* Set the body height to full viewport height */
+    margin: 0; /* Remove default margin */
+}
+#fullscreen-btn {
+    position: absolute;
+    top: 60px;
+    left: 130px;
+    padding: 10px;
+    background-color: #c51515;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    z-index: 1; /* Ensures the button is above the video feed */
+}
+
+#video-feed {
+    width: 50%;
+    height: 65%
+}
+#goback-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #a01a1a;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+h1 {
+    color: darkred;
+}
+
+img {
+    width: 500px;
+    height: 400px;
+    margin-top: 20px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.upload-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 15px;
+    background-color: darkred;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.action-btn1 {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 15px;
+    background-color: darkred;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+ 
+    
+}
+.action-btn2 {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 15px;
+    background-color: darkred;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+.action-btn1,
+.action-btn2 {
+    margin-bottom: -50px; /* Adjust as needed */
+}
+
+/* Loader styles */
+.loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid darkred;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    display: none;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
