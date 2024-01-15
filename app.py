@@ -7,7 +7,7 @@ import os
 
 app = Flask(__name__)
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 curClothId = 0
 size = 100
 images = [
